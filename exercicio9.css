@@ -1,0 +1,194 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.apresentacao {
+    padding: 0% 10%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.links_nav {
+    display: flex;
+    justify-content: space-evenly;
+    
+}
+#img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 12% 0 12%;
+}
+h1 {
+    font-family: "Quicksand", sans-serif;
+    font-size: 3em;
+}
+
+body, html {
+    background-color: #c5dbf2;
+}
+#segundo {
+    border: 2px solid black;
+    margin-top: 16%;
+    width: 400px;
+    height: 300px;
+    border-radius: 10px;
+    background-color: #f6d5c4;
+    font-size: 1.5em;
+}
+
+#segundo > h4 {
+    color: #f08162;
+    text-align: center;
+}
+.imagem {
+    position: relative;
+    background: url(imagem/pote.jpg) no-repeat;
+    width: 15vw;
+    height: 25vh;
+    margin-left: 50px;
+    margin-top: 40px;
+    padding: 10px;
+}
+.cart {
+    position: absolute;
+    background-color: #fff;
+    width: 17%;
+    height: 35%;
+    left: 75%;
+    top: 63%;
+    border-radius: 10px;
+    border: 1px solid;
+    box-shadow: 5px 6px black;
+}
+.cart img {
+    padding: 5px;
+    width: 100%;
+    cursor: pointer;
+}
+.cart > button {
+    background-color: #025d63;
+    color: #fff;
+    margin-top: 10px;
+    margin-left: 35px;
+    width: 70%;
+    height: 12%;
+    border-radius: 6px;
+    border: 0px;
+    cursor: pointer;
+}
+.cart > button:hover {
+    background-color: #025d63;
+}
+
+header {
+    display: flex;
+    padding: 10px;
+    align-items: center;
+    
+}
+
+a {
+    text-decoration: none;
+    padding-left: 50px;
+    color: #000;
+}
+
+#logo{
+    position: absolute;
+    width: 13%;
+    top: 10px;
+    left: 40%;
+}
+
+.cabecalho1{
+    position: absolute;
+    left: 68%;
+    top: 10px;
+}
+
+.cabecalho {
+    position: absolute;
+    width: 250px;
+    top: 10px;
+    left: 1300px;
+    border: 2px solid #000000;
+    padding: 10px;
+    margin: 0 100px;
+    margin-bottom: 10px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.cabecalho2 {
+    position: absolute;
+    left: 1170px;
+    width: 125px;
+    top: 10px;
+    border: 2px solid #000000;
+    padding: 10px;
+    margin: 0 100px;
+    margin-bottom: 10px;
+    text-align: center;
+    cursor: pointer;
+}
+#cor_paragrafo:hover {
+    background-color: #025d63;
+}
+
+#cor_paragrafo {
+    background-color: #007c86;
+    color: #fff;
+}
+.cart p {
+    background-color: #cecccc;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    padding: 7px;
+    border: 1px solid black;
+    font-size: 15px;
+}
+#text {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    padding: 10px;
+}
+.partedentro {
+    display: flex;
+    height: 20px;
+    justify-content: space-between;
+    margin: 5px 10px;
+}
+#text_fonts {
+    margin-top: 15%;
+    width: 49%;
+    gap: 20px;
+}
+#text_fonts p {
+    padding-top: 20px;
+    font-size: 1.5em;
+}
+.pontinho {
+    position: absolute;
+    left: 52%;
+    top: 12%;
+}
+#azul {
+    margin-top: 40px;
+    background-color: #007c86;
+    width: 140px;
+    text-align: center;
+    color: #fff;
+    height: 60px;
+    font-size: 12px;
+    cursor: pointer;
+}
+#azul:hover {
+    background-color: #01646b;
+    transform: translate(-1px, -2px);
+    box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.566);
+}

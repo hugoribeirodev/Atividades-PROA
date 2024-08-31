@@ -1,0 +1,141 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+.sessão-diferencial{
+    width: 100%;
+    height: 100vh;
+    background-color: black;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+
+
+.diferencial-titulo, h2{
+    font-family: "Orbitron", sans-serif;
+    font-size: 3rem;
+    color: gray;
+}
+
+.diferenciais{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+    margin-bottom: 100px;
+}
+
+.diferencial{
+    max-width: 350px;
+    margin: 0 60px;
+}
+
+.diferencial, img{
+    width: 50%;
+    margin-top: 40px;
+}
+
+.diferencial, h3{
+    color: yellow;
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    font-family: var(--font-btn);
+}
+
+.diferencial, p{
+    font-family: var(--font-content);
+    font-size: 1rem;
+    color: #ffff;
+}
+
+.read-more{
+    font-family: var(--font-content);
+    background-color: black;
+    border: 2px solid yellow;
+    color: white;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.3s ease, color 0.3s ease;
+    box-shadow: 0 0 30px yellow;
+    width: 163px;
+    height: 44px;
+}
+
+.read-more:hover {
+    background-color: yellow;
+    color: var(--black-color);
+}
+
+/* visualização tablet */
+
+@media only screen and (min-width:480px){
+    @media only screen and (max-width:720px) {
+    .sessão-diferencial{
+        height: 100%;
+        width: 100%;
+    }
+
+    .diferenciais {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 40px;
+    }
+
+    .diferencial img {
+        width: 40%;
+    }
+
+    .read-more{
+        margin-bottom: 50px;
+    }
+}
+}
+
+/* Estilos para dispositivos móveis */
+@media (max-width: 480px) {
+    .sessão-diferencial {
+       height: 100%;
+       width: 100%;
+    }
+
+    .diferenciais {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+       
+    }
+
+    .diferencial-titulo, h2 {
+        font-size: 40px;
+    }
+
+    .diferencial img {
+        width: 35%;
+    }
+
+    .diferencial h3 {
+        font-size: 20px;
+    }
+
+    .diferencial p {
+        font-size: 15px;
+    }
+
+    .read-more {
+        font-size: 14px;
+        width: 140px;
+        height: 40px;
+        margin-bottom: 60px;
+    }
+}

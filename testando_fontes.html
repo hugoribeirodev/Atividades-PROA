@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Testando outras fontes</title>
+
+    <style>
+        @font-face{/*tras uma fonte baixada*/
+            font-family: fonte1; /*deu um nome para minha fonte*/
+            src: url(fontes/Rubik-VariableFont_wght.ttf);/*trás as fonte de dentro da pasta baixada*/
+        }
+
+        .teste1{
+            font-family: fonte1;
+            font-size: 20px;
+            color: rgb(10, 96, 208);
+        }
+
+        @font-face{
+            font-family: fonte2;
+            src: url(fontes/Kanit/Kanit-BlackItalic.ttf);
+        }
+
+        .teste2{
+            font-family: fonte2;
+            font-size: 30px;
+            color: rgb(247, 60, 3);
+        }
+
+        @font-face{
+            font-family: fonte3;
+            src: url(fontes/Nerko_One/NerkoOne-Regular.ttf);
+        }
+
+        .teste3{
+            font-family: fonte3;
+            font-size: 40px;
+            color: rgb(243, 5, 247);
+        }
+    </style>
+
+</head>
+<body>
+    <p class="teste1">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi, assumenda. Amet laborum tenetur exercitationem quibusdam quidem commodi animi sequi architecto, sint facere, similique temporibus maiores, quis ea deleniti adipisci quod.</p>
+
+    <p class="teste2">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi, assumenda. Amet laborum tenetur exercitationem quibusdam quidem commodi animi sequi architecto, sint facere, similique temporibus maiores, quis ea deleniti adipisci quod.</p>
+    
+    <p class="teste3">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi, assumenda. Amet laborum tenetur exercitationem quibusdam quidem commodi animi sequi architecto, sint facere, similique temporibus maiores, quis ea deleniti adipisci quod.</p>
+
+</body>
+</html>
