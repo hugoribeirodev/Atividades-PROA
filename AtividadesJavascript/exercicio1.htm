@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculando calorias</title>
+</head>
+<body>
+    <h1>Calculo de calorias</h1>
+
+    <script>
+      let calorias_prato = prompt("Entre com número do prato: ")
+      let calorias_sobremesa = prompt ("Entre com o número da sobremesa: ")
+      let calorias_bebida = prompt ("Entre com o número da bebida: ")
+
+      switch(calorias_prato){
+        case 1:
+            calorias_Prato = 180; // Vegetariano
+            break;
+        case 2:
+            calorias_Prato = 230; // Peixe
+            break;
+        case 3:
+            calorias_Prato = 250; // Frango
+            break;
+        case 4:
+            calorias_Prato = 350; // Carne
+            break;
+      }
+
+      switch (calorias_sobremesa){
+        case 1:
+            calorias_Sobremesa = 75; // Abacaxi
+            break;
+        case 2:
+            calorias_Sobremesa = 110; // Sorvete diet
+            break;
+        case 3:
+            calorias_Sobremesa = 170; // Mousse diet
+            break;
+        case 4:
+            calorias_Sobremesa = 200; // Mousse chocolate
+            break;
+      }
+      
+      switch (calorias_bebida){
+        case 1:
+            calorias_Bebida = 20; // Chá
+            break;
+        case 2:
+            calorias_Bebida = 70; // Suco de laranja
+            break;
+        case 3:
+            calorias_Bebida = 100; // Suco de melão
+            break;
+        case 4:
+            calorias_Bebida = 65; // Refrigerante diet
+            break;
+      }
+
+        
+        document.write("O total de calorias da refeição é:" + calorias_prato + calorias_sobremesa + calorias_bebida);
+
+
+    </script>
+</body>
+</html>

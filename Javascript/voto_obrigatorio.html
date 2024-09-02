@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Voto</title>
+</head>
+<body>
+    <h1>Voto</h1>
+
+    <script>
+    
+    let idade = prompt ("Entre com sua idade")
+
+
+    if (idade < 16) {
+        document.write("Não vota")
+    } else if (idade >= 18 && idade < 70) {
+        document.write("Voto obrigatório")
+    } else if ((idade >= 16 && idade < 18) || idade >= 70) {
+        document.write("Voto opcional")
+    } else {
+        document.write("Iadde inválida")
+    }
+
+
+
+    </script>
+</body>
+</html>
