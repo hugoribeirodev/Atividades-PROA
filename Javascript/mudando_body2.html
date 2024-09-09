@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mudando contúdo</title>
+    <style>
+        body{
+            text-align: center;
+        }
+
+        img{
+            width: 20%;
+        }
+
+
+    </style>
+</head>
+
+<body class="fundo">
+    <h1 id="titulo">Testando mudança de cor de fundo Body, a cor da fonte e a imagem na página</h1>
+    <p>O que é Lorem Ipsum/ Lorem Ipsum é simplesmente uma simulação de texto da industria tipográfica e de impressos, e vem sendo utilizando dede o século XVI, quando um impressor desconhecido pegou uma bandeja de tipos e o embaralhou para fazer um livro de modelos de tipos, Lorem Ipsum sobreviveu não so a cinco séculos, como também ao salto para editoração eletrônica, permanecendo essencialmente inalterado. Se popularizou na década de 60, quando a Letraset lançou decalques contendo passagens de Lorem Ipsum, e mai recentemente quando passou a ser integrado a Softwares de editoração eletrônica como Aldus PageMaker</p>
+
+    <input type="button" id="escuro" value="modo escuro" onclick="escuro()">
+    <input type="button" id="daltonico" value="modo daltonico" onclick="daltonico()">
+    <input type="button" id="normal" value="modo normal" onclick="normal()">
+    <input type="button" id="grande" value="A+" onclick="grande()">
+
+    <hr>
+
+    <img src="../imagem/face.png" alt="" class="imgimage">
+
+    <p>O que é Lorem Ipsum/ Lorem Ipsum é simplesmente uma simulação de texto da industria tipográfica e de impressos, e vem sendo utilizando dede o século XVI, quando um impressor desconhecido pegou uma bandeja de tipos e o embaralhou para fazer um livro de modelos de tipos, Lorem Ipsum sobreviveu não so a cinco séculos, como também ao salto para editoração eletrônica, permanecendo essencialmente inalterado. Se popularizou na década de 60, quando a Letraset lançou decalques contendo passagens de Lorem Ipsum, e mai recentemente quando passou a ser integrado a Softwares de editoração eletrônica como Aldus PageMaker</p>
+
+    <script>
+        let header = document.getElementById("titulo");
+
+        function escuro(){
+            document.querySelector(".fundo").style.backgroundColor="black"
+            document.querySelector(".fundo").style.color="white"
+            document.querySelector(".fundo").style.fontSize="20px";
+            header.innerHTML="Testando o Modo escuro"
+        }
+
+        function daltonico(){
+            document.querySelector(".fundo").style.backgroundColor="rgb(240, 124, 240)"
+            document.querySelector(".fundo").style.color="green"
+            document.querySelector(".fundo").style.fontSize="20px";
+            header.innerHTML="Testando o Modo daltonico"
+        }
+        function normal(){
+            document.querySelector(".fundo").style.backgroundColor="white"
+            document.querySelector(".fundo").style.color="black"
+            document.querySelector(".fundo").style.fontSize="20px";
+            header.innerHTML="Testando mudança de cor de fundo Body, a cor da fonte e a imagem na página"
+        }
+        function grande(){
+            document.querySelector(".fundo").style.fontSize="30px";
+            header.innerHTML="Testando o Modo grande"
+        }
+    </script>
+
+
+</body>
+</html>

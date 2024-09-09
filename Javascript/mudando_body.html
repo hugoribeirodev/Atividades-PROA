@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Testando troca de conteúdo no Javascript</title>
+
+    <style>
+        body{
+            background-color: bisque;
+            color: #77247c;
+            text-align: center;
+        }
+
+        .myimage{
+            width: 20%;
+            height: auto;
+            margin: auto;
+        }
+        input{
+            background-color: rgb(212, 10, 212);
+            color: white;
+            height: 30px;
+            border-radius: 10px;
+            border-color: black;
+        }
+    </style>
+
+</head>
+<body class="fundo">
+    
+    <h1>Testando mudança de cor de fundo body, a cor da fonte e a imagem na página</h1>
+
+    <input type="button" id="verde" value="cor verde" onclick="verde()"> <!--onclik serve para atribuir a função, ou seja chamar a função criada para o botão no js-->
+    <input type="button" id="azul" value="cor azul" onclick="azul()">
+    <input type="button" id="bisque" value="cor bisque" onclick="bisque()">
+
+    <hr>
+
+    <img src="../imagem/insta.png" alt="" class="myimage">
+
+    <script>
+        function verde(){
+            document.querySelector(".fundo").style.backgroundColor="green";//quryselctor serve para escolher um elemento, ou classe e id
+            document.querySelector(".fundo").style.color="white";
+            document.querySelector(".myimage").src="../imagem/face.png";
+        }
+
+        function azul(){
+            document.querySelector(".fundo").style.backgroundColor="blue";//quryselctor serve para escolher um elemento, ou classe e id
+            document.querySelector(".fundo").style.color="yellow";
+            document.querySelector(".myimage").src="../imagem/whats.png";
+        }
+
+        function bisque(){
+            document.querySelector(".fundo").style.backgroundColor="bisque";//quryselctor serve para escolher um elemento, ou classe e id
+            document.querySelector(".fundo").style.color="#77247c";
+            document.querySelector(".myimage").src="../imagem/insta.png";
+        }
+    </script>
+
+</body>
+</html>
